@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>饭拍集锦 - 樊振东官方网站</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/photos.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="/">樊振东</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="./index.html">首页</a></li>
+                <li><a href="./photos.html" class="active">饭拍集锦</a></li>
+                <li><a href="./matches.html">比赛记录</a></li>
+                <li><a href="./interviews.html">比赛采访</a></li>
+                <li><a href="./fanfiction.html">每日一行婚</a></li>
+                <li><a href="./about.html">关于樊振东</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="photos-main">
+        <div class="container">
+            <h1>饭拍集锦</h1>
+            
+            <div class="photo-filters">
+                <button class="filter-btn active" data-filter="all">全部</button>
+                <button class="filter-btn" data-filter="training">训练</button>
+                <button class="filter-btn" data-filter="competition">比赛</button>
+                <button class="filter-btn" data-filter="daily">日常</button>
+            </div>
+
+            <div class="photo-grid">
+                <div class="photo-card" data-category="training">
+                    <img src="./images/fanz-training-1.png" alt="樊振东训练照片" onerror="this.onerror=null; console.log('图片加载失败');">
+                    <div class="photo-info">
+                        <h3>训练瞬间</h3>
+                        <p>2024年训练场景记录</p>
+                    </div>
+                </div>
+                <div class="photo-card" data-category="competition">
+                    <img src="./images/fanz-match-1.png" alt="樊振东比赛照片" onerror="this.onerror=null; console.log('图片加载失败');">
+                    <div class="photo-info">
+                        <h3>比赛精彩时刻</h3>
+                        <p>2025年精彩瞬间</p>
+                    </div>
+                </div>
+                <div class="photo-card" data-category="daily">
+                    <img src="./images/fanz-daily-1.png" alt="樊振东日常照片" onerror="this.onerror=null; console.log('图片加载失败');">
+                    <div class="photo-info">
+                        <h3>日常生活</h3>
+                        <p>2025年日常记录</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 照片预览模态框 -->
+    <div class="modal" id="photoModal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div class="modal-caption"></div>
+    </div>
+    
+    <script src="js/photos.js"></script>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>&copy; 2024 樊振东官方网站. 保留所有权利</p>
+        </div>
+    </footer>
+</body>
+</html> 
